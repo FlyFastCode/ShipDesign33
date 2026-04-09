@@ -34,12 +34,12 @@ jobs:
       - name: 项目构建
         run: npm run build
 
-      - name: 部署到预览分支
+      - name: 推送构建产物到 pages 分支
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.PAT }}  # 复用你之前创建的PAT
-          publish_branch: pages
-          publish_dir: ./dist
+          publish_branch: pages    # 推送到这个新分支
+          publish_dir: ./dist    # 你的构建输出目录（改这里！）
+          github_token: ${{ secrets.PAT }}
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
 
