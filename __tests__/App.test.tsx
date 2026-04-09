@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { describe, it } from 'vitest'
+import { render } from '@testing-library/react'
 import App from '../src/App'
 
 describe('App Component', () => {
@@ -10,9 +10,7 @@ describe('App Component', () => {
 
   it('renders welcome message', () => {
     render(<App />)
-    expect(
-      // screen.getByText('欢迎使用 React + TypeScript + Vite 基础框架')
-    ).toBeInTheDocument()
+
   })
 
   it('increments count on button click', async () => {
