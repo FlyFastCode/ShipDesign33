@@ -48,7 +48,6 @@ jobs:
         with:
           message: |
             ✅ PR #${{ github.event.number }} 预览已生成！
-            🔗 预览地址：https://flyfastcode.github.io/ShipDesign33/pr${{ github.event.number }}/
             📦 构建分支：pages/pr${{ github.event.number }}
             ⚠️  仅用于测试，请勿直接访问正式环境
           GITHUB_TOKEN: ${{ secrets.PAT }}
