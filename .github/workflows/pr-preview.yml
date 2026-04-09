@@ -38,7 +38,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.PAT }}  # 复用你之前创建的PAT
-          publish_branch: preview/pr${{ github.event.number }}
+          publish_branch: pages/pr${{ github.event.number }}
           publish_dir: ./dist
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
