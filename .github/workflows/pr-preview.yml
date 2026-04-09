@@ -6,7 +6,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  pr-open:
+  pr-preview:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
