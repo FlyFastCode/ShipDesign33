@@ -38,7 +38,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.PAT }}  # 复用你之前创建的PAT
-          publish_branch: pages/pr${{ github.event.number }}
+          publish_branch: pages
           publish_dir: ./dist
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
@@ -48,7 +48,7 @@ jobs:
         with:
           message: |
             ✅ PR #${{ github.event.number }} 预览已生成！
-            🔗 预览地址：https://flyfastcode.github.io/OSQuestTemplate/preview/pr${{ github.event.number }}/
-            📦 构建分支：preview/pr${{ github.event.number }}
+            🔗 预览地址：https://flyfastcode.github.io/ShipDesign33/pr${{ github.event.number }}/
+            📦 构建分支：pages/pr${{ github.event.number }}
             ⚠️  仅用于测试，请勿直接访问正式环境
           GITHUB_TOKEN: ${{ secrets.PAT }}
