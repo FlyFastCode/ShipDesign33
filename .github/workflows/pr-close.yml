@@ -13,5 +13,5 @@ jobs:
         uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
           delete_branch: true
-          branch_name: preview/pr${{ github.event.number }}
+          branch_name: pages/pr${{ github.event.number }}
           github_token: ${{ secrets.PAT }}
